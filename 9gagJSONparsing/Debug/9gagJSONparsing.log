@@ -1,0 +1,5 @@
+﻿  PermutationGenerator.cpp
+c:\users\micha\git\9gagjsonparsing\9gagjsonparsing\permutationgenerator.cpp(31): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+  9gagJSONparsing.cpp
+  Generating Code...
+  9gagJSONparsing.vcxproj -> C:\Users\micha\git\9gagJSONparsing\Debug\9gagJSONparsing.exe
