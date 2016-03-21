@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "PermutationGenerator.h"
 #include <stdio.h>
+#include <algorithm>
 
 PermutationGenerator::PermutationGenerator(std::string s)
 {
@@ -23,19 +24,32 @@ void PermutationGenerator::ParseWords(std::string s){
 	while (token != NULL)
 	{
 		//Will split up words
-		printf("%s\n", token);
 		token = strtok_s(NULL, " ", &next_token);
-		words.push_back(std::string(token));
+		if (token != NULL) {
+			std::string cleaned(token);
+			cleaned.resize(std::remove_if(cleaned.begin(), cleaned.end(), [](char x) {return !isalnum(x) && !isspace(x); }) - cleaned.begin());
+			printf("%s\n", cleaned);
+
+			words.push_back(cleaned);
+		}
+		else {
+			break;
+		}
 	}
 }
+
 
 std::vector<std::string>* PermutationGenerator::GetPermutations(){
 	std::vector<std::string>* permutations = new std::vector<std::string>();
 	for (unsigned int i = 0; i < words.size(); i++){
-		for (unsigned int j = i; j < words.size(); j++){
+		std::string current(words[i]);
+		for (unsigned int j = 0; j < words.size(); j++){
 			//concatenated permutation.
-			int x = 0;
+			permutations->push_back(current);
+			current += words[j];
+			//permutations = 
 		}
 	}
+	return permutations;
 
 }

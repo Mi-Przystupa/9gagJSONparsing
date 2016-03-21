@@ -20,6 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		Json::Value gags = root["gags"];
 
 		PermutationGenerator p(gags[0]["title"].toStyledString());
+		//std::vector<std::string>* permutations = 
 		// End game for this:
 		// Split up the title for each entry in data.json
 		// for each entry:

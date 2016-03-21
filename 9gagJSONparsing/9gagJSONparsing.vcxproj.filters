@@ -25,13 +25,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\git\jsoncpp\dist\json\json-forwards.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\..\git\jsoncpp\dist\json\json.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PermutationGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jsoncpp\dist\json\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jsoncpp\dist\json\json-forwards.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -42,10 +42,10 @@
     <ClCompile Include="9gagJSONparsing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\git\jsoncpp\dist\jsoncpp.cpp">
+    <ClCompile Include="PermutationGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PermutationGenerator.cpp">
+    <ClCompile Include="..\..\jsoncpp\dist\jsoncpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
